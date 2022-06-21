@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <button type="button" onclick="modal1()">Add new Product</button>
+<div id="holder">
+</div>
+<div id="modal-container">
+  <div id="modal-content">
+<form onsubmit="event.preventDefault(); add()">
+  <p>Title</p>
+  <input type="text" name="title" id="title">
+  <p>Price</p>
+  <input type="text" name="price" id="price">
+  <p>Category</p>
+  <select name="category" id="category">
+    <option value="men's clothing">Men's Clothing</option>
+    <option value="women's clothing">Women's Clothing</option>
+    <option value="jewelry">Jewelry</option>
+    <option value="electronics">Electronics</option>
+  </select>
+  <p>Image</p>
+  <input type="text" name="image" id="image">
+  <p>Rating</p>
+  <input type="text" name="rating" id="rating">
+   <p>Description</p>
+  <textarea name="description" id="description" cols="0" rows="0"></textarea>
+  <button type="submit" class="btn">Add product</button>
+ <button type="button" onclick="close()" class="btn">Close</button>
+  </form>
+    <div class="btn-contain">
+    </div>
+  </div>
+   
+
+  </div>
+  
+</div>
+    <script src="./styling.js"></script>
+</body>
+</html>

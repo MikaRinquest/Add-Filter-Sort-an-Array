@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Makes sure the modal doesn't appear  */
+#modal-container{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+
+#modal-content{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  margin:15%;
+  margin-left:32%;
+  width:30%;
+  padding:15px;
+  border-radius: 23px;
+background: #d6d6d6;
+}
+
+.btn {
+  align-self:center;
+}
+
+.btn-contain {
+  flex-direction:row;
+}
